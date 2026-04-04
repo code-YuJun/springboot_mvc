@@ -2,7 +2,7 @@
 # key:
 # 缩进key:  -> key.key
 server:
-  port: 80
+  port: 8088
   servlet:
     context-path: /book
 
@@ -17,4 +17,8 @@ xiaoming:
 # 激活外部配置
 spring:
   profiles:
-    active: test,dev
+    active: test,dev,druid
+  # 禁用数据库初始化脚本，避免自动配置H2驱动
+  sql:
+    init:
+      mode: never
