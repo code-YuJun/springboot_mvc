@@ -18,6 +18,7 @@
 
     <!-- 导入对应的启动器即可-->
     <dependencies>
+        <!-- web 相关的启动器，里面已经包括 springmvc json解析-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
