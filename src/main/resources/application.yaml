@@ -1,0 +1,20 @@
+# yaml有层次,可以继承的配置文件格式
+# key:
+# 缩进key:  -> key.key
+server:
+  port: 80
+  servlet:
+    context-path: /book
+
+# 自定义配置（yaml格式）
+xiaoming:
+  user:
+    gfs:
+      - a
+      - b
+      - c
+
+# 激活外部配置
+spring:
+  profiles:
+    active: test,dev
