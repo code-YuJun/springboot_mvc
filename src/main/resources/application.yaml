@@ -13,11 +13,17 @@ xiaoming:
       - a
       - b
       - c
+    username: root
+    password: 123456
 
 # 激活外部配置
 spring:
   profiles:
-    active: test,dev,druid
+    active: druid
+  web:
+    resources:
+    # 配置静态资源地址,如果设置,会覆盖默认值
+      static-locations: classpath:/webapp
   # 禁用数据库初始化脚本，避免自动配置H2驱动
   sql:
     init:

@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
     @Autowired
     private User user;
-
     @GetMapping("show")
     public User show(){
         return user;
