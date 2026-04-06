@@ -1,0 +1,10 @@
+mybatis:
+  mapper-locations: classpath:/mappers/*.xml # 指定 Mapper 映射 XML 文件的路径
+  type-aliases-package: com.study.java.pojo # 配置实体类别名包
+  configuration:
+    # 开启下划线转驼峰命名映射（例如数据库 user_name 对应实体类 userName）
+    map-underscore-to-camel-case: true
+    # 设置自动映射级别为 full（全映射），支持级联映射
+    auto-mapping-behavior: full
+    # 指定 MyBatis 日志实现为 SLF4J，方便在控制台打印 SQL 语句
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl

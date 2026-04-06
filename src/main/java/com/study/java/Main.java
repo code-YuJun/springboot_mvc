@@ -1,8 +1,11 @@
 package com.study.java;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+// 指定 mapper 接口所在的位置
+@MapperScan("com.study.java.mapper")
 @SpringBootApplication  //启动类
 public class Main {
     public static void main(String[] args) {

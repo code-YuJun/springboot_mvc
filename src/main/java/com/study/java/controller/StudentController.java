@@ -1,5 +1,7 @@
 package com.study.java.controller;
-
+/**
+ * Druid 和 JdbcTemplate 配合查询数据
+ */
 import com.study.java.pojo.Stu;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;

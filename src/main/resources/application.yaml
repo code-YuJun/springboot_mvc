@@ -19,7 +19,7 @@ xiaoming:
 # 激活外部配置
 spring:
   profiles:
-    active: druid
+    active: druid,mybatis
   web:
     resources:
     # 配置静态资源地址,如果设置,会覆盖默认值
